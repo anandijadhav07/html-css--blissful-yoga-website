@@ -5,11 +5,59 @@
     <style>
     .welcome {
     text-align: center;
-    padding: 20px;
-    width: 80%;
-    margin: auto;
+    padding: 10px;
+    width:1500px;
+    background-color:#eecfcf;
+}
+.cards-section{
+     padding: 40px;
+    background:#dac1c1;
+    text-align: center;
+    width: 1440PX;
+}
+.section-title{
+    font-size: 28px;
+    margin-bottom: 25px;
+    color:rgb(9, 9, 9);
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
+.card{
+    width: 300px;
+    background:#f7d6d6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgb(0,0,0);
+}
+.card:hover{
+    background-color:#d9abab;
+}
+.service{
+    border-radius: 10px;
+}
+.card-btn {
+    display: inline-block;
+    background:#a060a0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.card-btn:hover {
+    background:#492f49;
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+
+
+    
 
     </style>
 
@@ -24,6 +72,48 @@ Our classes are designed to bring positivity, flexibility, and peace into your d
 Join us to relax, stretch, breathe, and explore the journey toward a healthier you.
         </p>
     </div>
+
+    <div class="cards-section">
+    <h2 class="section-title">Our Programs</h2>
+
+    <div class="cards-container">
+
+        
+        <div class="card">
+            <img src="../images/our-services.jpg" alt="our-services-img" class="service" height="100px" width="300px">
+            <h3>Our Services</h3>
+            <p>We offer calming yoga sessions, meditation classes and holistic wellness programs designed for all age groups.</p>
+            
+            <a href="" class="card-btn">Read More</a>
+        </div>
+
+    <div class="card">
+            <img src="../images/schedule.jpg" alt="schedule" class="service" height="100px" width="300px">
+            <h3>Class Schedule</h3>
+                <p>• Morning Batch: 6:00 AM-7:00 AM</p>
+                <p>• Evening Batch: 6:00 PM-7:30 PM</p>
+            <a href="" class="card-btn">Learn More</a>
+        </div>
+
+
+
+        <div class="card">
+            <img src="../images/training-workshop.jpg" alt="training-workshop" class="service" height="100px" width="300px">
+            <h3>Workshops</h3>
+            <p>Join our live workshops to improve flexibility, learn breathing practices, and enhance your inner balance.</p>
+            <a href="" class="card-btn">Join Now</a>
+        </div>
+
+        
+
+        
+           
+    </div>
+</div>
+
+
+    
+            
 
      
 
