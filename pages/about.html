@@ -1,286 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
-    <style>
-        .navbar {
-            width: 1440px;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #ffffff;
-            box-shadow: 0 2px 8px rgb(0, 0, 0);
-            position: fixed;
-            top: 0px;
-            left: 0px
-        }
-
-
-        .logo {
-            font-size: 22px;
-            font-weight: 600;
-            color: #121312;
-        }
-
-        .nav-links {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 30px;
-        }
-        
-        body {
-            background-color: #dee8eb;
-        }
-
-        .welcome {
-            text-align: center;
-            padding: 10px;
-            width: 1500px;
-            background-color: #dee8eb;
-        }
-
-        .cards-section {
-            padding: 40px;
-            background: #bbcfdc;
-            text-align: center;
-            width: 1440PX;
-        }
-
-        .section-title {
-            font-size: 28px;
-            margin-bottom: 25px;
-            color: rgb(9, 9, 9);
-        }
-
-        .cards-container {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 300px;
-            background: #E3E3E3;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgb(0, 0, 0);
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            background: #e2d4d4;
-        }
-
-        .service {
-            border-radius: 10px;
-        }
-
-        .card-btn {
-            display: inline-block;
-            background: #1B3C53;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 6px;
-        }
-
-        .card-btn:hover {
-            background: #492f49;
-            transform: scale(1.08);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .trainers {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .trainers h2 {
-            font-size: 32px;
-            color: rgb(9, 9, 9);
-            margin-bottom: 5px;
-        }
-
-        .team-intro {
-            font-size: 16px;
-            color: rgb(9, 9, 9);
-            margin-bottom: 30px;
-        }
-
-        .trainer-cards {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .trainer-card {
-            width: 260px;
-            background: hsl(203, 53%, 82%);
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgb(0, 0, 0);
-            padding: 25px 15px;
-            text-align: center;
-
-        }
-
-        .trainer-card:hover {
-            box-shadow: 0 4px 15px rgb(0, 0, 0);
-            background: hsl(202, 25%, 58%);
-        }
-
-
-        .trainer-img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #f1f1f1;
-            margin-bottom: 15px;
-        }
-
-        .trainer-card h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
-            color: #0a0a0a;
-        }
-
-        .trainer-card p {
-            font-size: 14px;
-            color: #0e0e0e;
-            margin-bottom: 15px;
-        }
-
-        .social-icons img {
-            width: 28px;
-            margin: 0 5px;
-            transition: 0.3s;
-        }
-
-        .footer {
-            background: #5F97A4;
-            color: #e0e0e0;
-            padding: 40px 20px 10px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 40px;
-            width: 1200px;
-            margin-left: 250px;
-
-        }
-
-        .footer-box {
-            flex: 1 1 250px;
-        }
-
-        .footer-box h3 {
-            margin-bottom: 15px;
-            color: #ffd78a;
-            font-size: 20px;
-        }
-
-        .footer-box p {
-            font-size: 15px;
-
-        }
-
-        .footer-box ul {
-            padding: 0;
-        }
-
-        .footer-box ul li {
-            margin: 8px 0;
-        }
-
-        .footer-box ul li a {
-            color: #cccccc;
-            transition: 0.3s;
-        }
-
-        .footer-box ul li a:hover {
-            color: #ffd78a;
-            padding-left: 5px;
-        }
-
-        .social-links a {
-            font-size: 22px;
-            margin-right: 10px;
-            color: #ffd78a;
-            transition: 0.3s;
-        }
-
-        .social-links a:hover {
-            color: white;
-        }
-
-        .newsletter {
-            text-align: center;
-            margin: 40px auto;
-            width: 600px;
-        }
-
-        .newsletter-box {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .newsletter input {
-            padding: 12px;
-            width: 60%;
-            border-radius: 5px 0 0 5px;
-        }
-
-        .newsletter button {
-            padding: 12px 20px;
-            border: none;
-            background: #ffd78a;
-            color: black;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .newsletter button:hover {
-            background: white;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            border-top: 1px solid #333;
-            margin-top: 30px;
-            padding-top: 10px;
-        }
-
-        .footer-bottom p {
-            font-size: 14px
-        }
-    </style>
-
+    <link rel="stylesheet" href="about.css"/>
 </head>
-
 <body>
 
     <div>
         <nav class="navbar">
-            <div class="logo">Blissful Yoga Hub</div>
+            <div class="logo">
+                <img src="../images/main-logo.jpeg" alt="yoga-logo">
+                <span>Blissful Yoga Hub</span>
+            </div>
 
             <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="types.html">Types</a>
-                <a href="benefits.html">Benefits</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
-                <a href="signup.html">Signup</a>
+                <a href="./../index.html">Home</a>
+                <a href="../pages/about.html">About</a>
+                <a href="../pages/types.html">Types</a>
+                <a href="../pages/benefits.html">Benefits</a>
+                <a href="../pages/gallery.html">Gallery</a>
+                <a href="../pages/contact.html">Contact</a>
+                <a href="../pages/signup.html">Signup</a>
             </div>
         </nav>
     </div>
@@ -344,10 +87,18 @@
                 <h3>Meera Sharma</h3>
                 <p>Hatha Yoga Instructor</p>
                 <div class="social-icons">
-                    <img src="../images/insta.png" alt="insta-img" />
-                    <img src="../images/facebook.png" alt="facebook-img" />
-                    <img src="../images/telegram.png" alt="telegram-img" />
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../images/insta.png" alt="insta-img" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../images/facebook.png" alt="facebook-img" />
+                    </a>
+                    <a href="https://telegram.me" target="_blank">
+                        <img src="../images/telegram.png" alt="telegram-img" />
+                    </a>
                 </div>
+
+
             </div>
             <div class="trainer-card">
                 <img src="../images/trainer-2.jpg" alt="trainer-2" class="trainer-img">
@@ -355,10 +106,15 @@
                 <p>Meditation & Wellness Coach</p>
 
                 <div class="social-icons">
-                    <img src="../images/insta.png" alt="insta-img" />
-                    <img src="../images/facebook.png" alt="facebook-img" />
-                    <img src="../images/telegram.png" alt="telegram-img" />
-
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../images/insta.png" alt="insta-img" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../images/facebook.png" alt="facebook-img" />
+                    </a>
+                    <a href="https://telegram.me" target="_blank">
+                        <img src="../images/telegram.png" alt="telegram-img" />
+                    </a>
                 </div>
             </div>
 
@@ -368,9 +124,15 @@
                 <p>Power Yoga Expert</p>
 
                 <div class="social-icons">
-                    <img src="../images/insta.png" alt="insta-img" />
-                    <img src="../images/facebook.png" alt="facebook-img" />
-                    <img src="../images/telegram.png" alt="telegram-img" />
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../images/insta.png" alt="insta-img" />
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../images/facebook.png" alt="facebook-img" />
+                    </a>
+                    <a href="https://telegram.me" target="_blank">
+                        <img src="../images/telegram.png" alt="telegram-img" />
+                    </a>
 
 
                 </div>
@@ -408,12 +170,23 @@
             </div>
         </div>
         <div align="center">
-            <div class="social-icons">
-                <img src="../images/insta.png" alt="insta-img" />
-                <img src="../images/facebook.png" alt="facebook-img" />
-                <img src="../images/telegram.png" alt="telegram-img" />
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/blissfulyogahub" target="_blank">
+                    <img src="../images/insta.jpeg" alt="Instagram" height="30px" width="30px">
+                </a>
+
+                <a href="https://www.facebook.com/blissfulyogahub" target="_blank">
+                    <img src="../images/facebook.png" alt="Facebook" height="30px" width="30px">
+                </a>
+
+
+                <a href="https://t.me/blissfulyogahub" target="_blank">
+                    <img src="../images/telegram.png" alt="Telegram" height="30px" width="30px">
+                </a>
             </div>
         </div>
+
         <div class="newsletter">
             <h3>Subscribe to Our Newsletter</h3>
             <div class="newsletter-box">
